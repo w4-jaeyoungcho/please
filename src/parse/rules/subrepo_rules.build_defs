@@ -107,6 +107,7 @@ def new_http_archive(name:str, urls:list, build_file:str=None, build_file_conten
         tools = [CONFIG.JARCAT_TOOL],
         outs = [name],
         cmd = cmd,
+        visibility = visibility,
     )
     subrepo(
         name = name,
