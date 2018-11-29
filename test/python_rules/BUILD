@@ -100,59 +100,59 @@ python_test(
     labels = ["py2"],
 )
 
-python_test(
-    name = "python3_coverage_test",
-    srcs = ["python_coverage_test.py"],
-    labels = ["py3"],
-)
+# python_test(
+#     name = "python3_coverage_test",
+#     srcs = ["python_coverage_test.py"],
+#     labels = ["py3"],
+# )
 
-python_test(
-    name = "unittest_unicode_test",
-    srcs = ["unittest_unicode_test.py"],
-)
+# python_test(
+#     name = "unittest_unicode_test",
+#     srcs = ["unittest_unicode_test.py"],
+# )
 
-python_test(
-    name = "numpy_test",
-    srcs = ["numpy_test.py"],
-    labels = [
-        "py3",
-        "pip",
-    ],
-    deps = ["//third_party/python:numpy"],
-)
+# python_test(
+#     name = "numpy_test",
+#     srcs = ["numpy_test.py"],
+#     labels = [
+#         "py3",
+#         "pip",
+#     ],
+#     deps = ["//third_party/python:numpy"],
+# )
 
-python_test(
-    name = "tensorflow_test",
-    srcs = ["tensorflow_test.py"],
-    labels = [
-        "py3",
-        "pip",
-    ],
-    deps = ["//third_party/python:tensorflow"],
-)
+# python_test(
+#     name = "tensorflow_test",
+#     srcs = ["tensorflow_test.py"],
+#     labels = [
+#         "py3",
+#         "pip",
+#     ],
+#     deps = ["//third_party/python:tensorflow"],
+# )
 
-python_test(
-    name = "pandas_test",
-    srcs = ["pandas_test.py"],
-    labels = [
-        "py3",
-        "pip",
-    ],
-    deps = ["//third_party/python:pandas"],
-)
+# python_test(
+#     name = "pandas_test",
+#     srcs = ["pandas_test.py"],
+#     labels = [
+#         "py3",
+#         "pip",
+#     ],
+#     deps = ["//third_party/python:pandas"],
+# )
 
-python_test(
-    name = "scipy_test",
-    srcs = ["scipy_test.py"],
-    labels = [
-        "py3",
-        "pip",
-    ],
-    deps = ["//third_party/python:scipy"],
-)
+# python_test(
+#     name = "scipy_test",
+#     srcs = ["scipy_test.py"],
+#     labels = [
+#         "py3",
+#         "pip",
+#     ],
+#     deps = ["//third_party/python:scipy"],
+# )
 
-python_test(
-    name = "worker_test",
-    srcs = ["worker_test.py"],
-    worker = "//test/workers:worker",
-)
+# python_test(
+#     name = "worker_test",
+#     srcs = ["worker_test.py"],
+#     worker = "//test/workers:worker",
+# )
