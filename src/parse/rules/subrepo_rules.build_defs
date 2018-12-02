@@ -90,9 +90,9 @@ def new_http_archive(name:str, urls:list, build_file:str=None, build_file_conten
             cmd = '$TOOL x $SRCS_REMOTE -o $OUT'
     else:
         if strip_prefix:
-            cmd = f'tar -axf $SRCS_REMOTE && mv {strip_prefix} $OUT'
+            cmd = f'tar -xf $SRCS_REMOTE && echo $OUT && mv {strip_prefix} $OUT'
         else:
-            cmd = 'mkdir $OUT && tar -axf $SRCS_REMOTE -C $OUT'
+            cmd = 'mkdir $OUT && tar -xf $SRCS_REMOTE -C $OUT'
     if build_file:
         cmd += ' && mv $SRCS_BUILD $OUT/' + CONFIG.BUILD_FILE_NAMES[0]
     elif build_file_content:
